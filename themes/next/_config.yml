@@ -6,7 +6,7 @@
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "Hexo, Winter"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -89,6 +89,7 @@ social_icons:
   GitHub: github
   Twitter: twitter
   Weibo: weibo
+  Weixin: weixin
 
 
 # Sidebar Avatar
@@ -96,9 +97,10 @@ social_icons:
 
 
 # Social links
-# social:
-  #GitHub:
-  #Others:
+social:
+  GitHub: https://github.com/Code-Ken
+  Email: mailto:gaosong0301@foxmail.com
+  Weixin: http://7xnp4f.com1.z0.glb.clouddn.com/weixin.jpg
 
 
 # TOC in the Sidebar
