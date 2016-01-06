@@ -1,4 +1,5 @@
 title: Hello World
+date: 2016-01-04 16:55:38
 categories: Blog
 tag: [hexo,blog]
 ---
