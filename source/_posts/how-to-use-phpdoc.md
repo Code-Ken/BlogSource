@@ -270,7 +270,7 @@ phpdoc –h
 
 
 
-###No summary was found for this file  
+### No summary was found for this file  
 
 我们注意到上一段代码中的第11行报了一个错误`No summary was found for this file  `
 
@@ -329,9 +329,9 @@ However, if you only have one docblock at the top of the file, it will get paire
 
 ```
 
-#tags标签详解
+# tags标签详解
 
-##标记用途描述
+## 标记用途描述
 
 
 
