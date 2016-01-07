@@ -1,6 +1,6 @@
 title: PhpDocument的使用
 date: 2016-01-06 20:17:52
-categories: php
+categories: PHP
 tags: phpdoc
 ---
 
