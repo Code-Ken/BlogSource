@@ -1,7 +1,7 @@
 title: HTTP和HTTPS的区别
 date: 2016-01-05 16:55:38
-categories: Tcp/Ip
-tags: [http,https]
+categories: 网络协议
+tags: [http,https,网络协议]
 ---
 
 <center>本文主要讲解http和https的关系与区别</center>
