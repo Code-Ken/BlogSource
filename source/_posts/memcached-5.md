@@ -1,7 +1,7 @@
 title: memcached第六章——经典问题
 date: 2016-03-04 09:30:00
 categories: memcached
-tags: ［memcached,PHP］
+tags: [memcached,PHP]
 ---
 
 <center>memcached一些经典问题的解决方案</center>

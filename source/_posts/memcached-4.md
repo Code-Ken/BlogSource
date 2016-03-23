@@ -1,7 +1,7 @@
 title: memcached第五章——分布式算法
 date: 2016-03-04 09:26:53
 categories: memcached
-tags: ［memcached,PHP］
+tags: [memcached,PHP]
 ---
 
 <center>memcached两种分布式算法介绍</center>
