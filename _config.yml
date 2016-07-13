@@ -72,3 +72,7 @@ deploy:
   type: git
   repo: git@github.com:Code-Ken/code-ken.github.io
   branch: master
+
+search:
+  path: search.xml
+  field: all
