@@ -108,3 +108,69 @@ www/
 └── warning
     └── warning.20160421.log
 ```
+
+## 源代码
+
+```
+<?php
+
+/**
+ * Class Lib_Log 日志类
+ */
+class Lib_Log
+{
+    /**
+     * 错误日志函数
+     * @param $message
+     * @param string $level
+     * @return bool
+     */
+    public static function errorLog($message, $level = "error")
+    {
+        $map = array(
+            "warning" => SEASLOG_WARNING,
+            "error" => SEASLOG_ERROR,
+            "emergency" => SEASLOG_EMERGENCY
+        );
+        if (!in_array($level, $map)) {
+            return false;
+        }
+
+        $ext_info = "";
+        $trace = debug_backtrace();
+        if (count($trace)) {
+            $tmp = isset($trace[1]) ? " | 执行函数名: " . $trace[1]['function'] : "";
+            $ext_info = " | 出错文件地址: " . $trace[0]['file'] . $tmp . " | 出错位置在第" . $trace[0]['line'] . "行左右";
+        }
+
+        return SeasLog::log($map[$level], $message . $ext_info, array(), $level) ? true : false;
+    }
+
+    /**
+     * 一般日志函数
+     * @param $message
+     * @param string $model
+     * @return bool
+     */
+    public static function log($message, $model)
+    {
+        if (empty($model)) {
+            return false;
+        }
+        return SeasLog::log(SEASLOG_INFO, $message . '===> Ip :' . $_SERVER['REMOTE_ADDR'], array(), '/default/' . $model) ? true : false;
+    }
+
+    /**
+     * debug日志函数
+     * @param $message
+     * @return bool
+     */
+    public static function debugLog($message)
+    {
+        if (!SeasLog::log(SEASLOG_DEBUG, $message, array(), 'default/debug')) {
+            return false;
+        }
+        return true;
+    }
+}
+```
